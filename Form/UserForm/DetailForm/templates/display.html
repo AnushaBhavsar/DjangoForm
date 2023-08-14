@@ -1,0 +1,16 @@
+<html>
+    <body>
+        <center>
+            <h1>Details</h1>
+            <table border='1'>
+                {% for d in Data %}
+                <tr>
+                    <td>{{ d.fname }} {{ d.lname }}</td>
+                    <td>{{ d.email }}</td>
+                    <td>{{ d.contact_no }}</td>
+                    {% endfor %}
+                </tr>
+            </table>
+        </center>
+    </body>
+</html>
